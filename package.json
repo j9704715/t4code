@@ -1,6 +1,6 @@
 {
   "name": "@maria_rcks/t4code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Launcher for exposing T3 Code over a Tailscale tailnet",
   "keywords": [
     "bun",
