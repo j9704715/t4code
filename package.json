@@ -1,0 +1,81 @@
+{
+  "name": "@maria_rcks/t4code",
+  "version": "1.0.1",
+  "description": "Launcher for exposing T3 Code over a Tailscale tailnet",
+  "keywords": [
+    "bun",
+    "codex",
+    "t3code",
+    "tailscale",
+    "tui"
+  ],
+  "homepage": "https://github.com/maria-rcks/t4code#readme",
+  "bugs": {
+    "url": "https://github.com/maria-rcks/t4code/issues"
+  },
+  "license": "MIT",
+  "author": "Maria <maria@kuuro.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maria-rcks/t4code.git"
+  },
+  "bin": {
+    "t4code": "dist/t4code.js"
+  },
+  "files": [
+    "dist",
+    "src/app.tsx",
+    "src/codexCliVersion.ts",
+    "src/flow.ts",
+    "src/main.tsx",
+    "src/qr.ts",
+    "src/runtime.ts",
+    "src/state.ts",
+    "src/terminal.ts",
+    "src/services/config.ts",
+    "src/services/errors.ts",
+    "src/services/process.ts",
+    "src/services/t3.ts",
+    "src/services/tailscale.ts",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "assets/logo.png"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "bun run --conditions=browser --preserve-symlinks --hot src/main.tsx",
+    "start": "bun run --conditions=browser --preserve-symlinks src/main.tsx",
+    "typecheck": "tsgo --noEmit -p tsconfig.json",
+    "fmt": "oxfmt --write src bin *.json *.md",
+    "fmt:check": "oxfmt --check src bin *.json *.md",
+    "lint": "oxlint src bin",
+    "test": "bun test",
+    "build": "rm -rf dist && bun build ./bin/t4code.ts --outfile ./dist/t4code.js --target bun",
+    "prepublishOnly": "bun run check && bun run build",
+    "check": "bun run fmt:check && bun run lint && bun run typecheck && bun run test"
+  },
+  "dependencies": {
+    "@effect/atom-solid": "4.0.0-beta.12",
+    "@opentui/core": "0.1.81",
+    "@opentui/solid": "0.1.81",
+    "effect": "4.0.0-beta.12",
+    "qrcode": "1.5.4",
+    "solid-js": "1.9.9"
+  },
+  "devDependencies": {
+    "@effect/language-service": "0.76.0",
+    "@tsconfig/bun": "^1.0.10",
+    "@types/babel__core": "^7.20.5",
+    "@types/bun": "^1.3.10",
+    "@types/qrcode": "^1.5.6",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0"
+  },
+  "engines": {
+    "bun": ">=1.3.10"
+  }
+}
